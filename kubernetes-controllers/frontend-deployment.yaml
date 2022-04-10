@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hipster-frontend
+  name: frontend
   labels:
-    app: hipster-frontend
+    app: frontend
 spec:
   # modify replicas according to your case
   replicas: 3
   selector:
     matchLabels:
-      app: hipster-frontend
+      app: frontend
   template:
     metadata:
       labels:
-        app: hipster-frontend
+        app: frontend
     spec:
       containers:
       - name: server
