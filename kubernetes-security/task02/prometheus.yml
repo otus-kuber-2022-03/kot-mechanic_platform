@@ -37,5 +37,5 @@ subjects:
     apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: ClusterRole
-  name: clusterrole-prometheus
+  name: prometheus-cluster-role
   apiGroup: rbac.authorization.k8s.io
